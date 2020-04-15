@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {
-                  widget.flutterBlue.stopScan();
+                  await widget.flutterBlue.stopScan();
                   try {
                     await device.connect();
                   } catch (e) {
